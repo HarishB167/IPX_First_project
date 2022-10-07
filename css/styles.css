@@ -224,13 +224,65 @@ body {
   width: 74px;
 }
 
-.payment_button {
-  align-self: center;
-  background: radial-gradient(
-    86.07% 145.35% at 28.05% 86.07%,
-    #3e67ff 0%,
-    #e47298 100%
-  );
+.price_and_stock {
+  display: flex;
+  margin-top: 11px;
+  margin-bottom: 60px;
+}
+
+.price_and_stock .subtitle-text,
+.payment_options .subtitle-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-right: 142px;
+  margin-bottom: 8px;
+}
+
+.price_and_stock .price_text,
+.price_and_stock .stock_text {
+  font-family: "zuume";
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 52px;
+}
+
+.payment_options .options_list {
+  display: flex;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.payment_options .payment_option {
+  margin-right: 55px;
+}
+
+.payment_option__selected {
+  background: url("../images/selected_rectangle.svg");
+  width: 149.14px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected_ellipse {
+  position: relative;
+  top: -21px;
+  left: -69px;
+}
+
+.selected_check {
+  position: relative;
+  top: -21px;
+  left: -89px;
+}
+
+.buy_now_button {
+  background-image: url("../images/payment_button.png");
   border-radius: 10px;
   border: 0;
   color: #ffffff;
@@ -239,6 +291,21 @@ body {
   height: 56px;
   padding: 0;
   width: 174px;
+  margin-right: 20px;
+}
+
+.request_call_back {
+  background: rgba(255, 31, 31, 0.11);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/request_call_back.png");
+  box-sizing: border-box;
+  width: 174px;
+  height: 56px;
+  border-radius: 10px;
+  border: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .section {

@@ -76,24 +76,37 @@
             </div>
             <hr class="hr__1px_solid_white_opacity_2" />
             <div class="sales_details__content">
-              <div class="sales_details__content__line">
-                <div>how many units do you want to buy?</div>
-                <div class="units_count_input">
-                  <select class="units_count_select" name="unitsCount">
-                    <option value="40">40</option>
-                    <option value="50" selected>50</option>
-                    <option value="60">60</option>
-                  </select>
-                  <img src="images/arrow.svg" alt="drop down arrow" />
+              <div class="price_and_stock">
+                <div>
+                  <div class="subtitle-text">current price</div>
+                  <div class="price_text">$500</div>
+                </div>
+                <div>
+                  <div class="subtitle-text">units available</div>
+                  <div class="stock_text">50</div>
                 </div>
               </div>
-              <div class="sales_details__content__line">
-                <div>investment amount</div>
-                <div class="investment_amount">$500</div>
-              </div>
-              <div class="sales_details__content__line">
-                <div>processing fee</div>
-                <div class="processing_fee">$10</div>
+              <div class="payment_options">
+                <div class="subtitle-text">select how you want to pay</div>
+                <div class="options_list">
+                  <span class="payment_option">
+                    <img
+                      src="images/stripe_logo_revised_2016_1.svg"
+                      alt="Stripe"
+                    />
+                  </span>
+                  <span class="flex">
+                    <span class="payment_option payment_option__selected"
+                      ><img
+                        src="images/paypal_2014_logo_1.svg"
+                        alt="Paypal" /></span
+                    ><img
+                      class="selected_ellipse"
+                      src="images/selected_ellipse.svg" /><img
+                      class="selected_check"
+                      src="images/selected_check.svg"
+                  /></span>
+                </div>
               </div>
               <div class="sales_details__content__declaration">
                 <input type="checkbox" name="declaration" id="declaration" />
@@ -104,7 +117,10 @@
                   >
                 </span>
               </div>
-              <button class="payment_button">Pay via Paypal</button>
+              <div class="payment_actions">
+                <button class="buy_now_button">Buy Now</button>
+                <button class="request_call_back">Request call back</button>
+              </div>
             </div>
           </div>
         </div>
