@@ -1,46 +1,41 @@
+/* Fonts */
 @font-face {
-  font-family: "opensans";
-  src: url("fonts/open-sans/opensans-bold-webfont.woff2") format("woff2"),
-    url("fonts/open-sans/opensans-bold-webfont.woff") format("woff");
-
+  font-family: "visby_cf";
+  src: url("fonts/visby-cf/fontspring-demo-visbycf-bold-webfont.woff2")
+      format("woff2"),
+    url("fonts/visby-cf/fontspring-demo-visbycf-bold-webfont.woff")
+      format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "opensans";
-  src: url("fonts/open-sans/opensans-regular-webfont.woff2") format("woff2"),
-    url("fonts/open-sans/opensans-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "league_gothic";
-  src: url("fonts/league-gothic/leaguegothic-regular-variablefont_wdth-webfont.woff2")
+  font-family: "visby_cf";
+  src: url("fonts/visby-cf/fontspring-demo-visbycf-medium-webfont.woff2")
       format("woff2"),
-    url("fonts/league-gothic/leaguegothic-regular-variablefont_wdth-webfont.woff")
+    url("fonts/visby-cf/fontspring-demo-visbycf-medium-webfont.woff")
       format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "visby_cf";
-  src: url("fontspring-demo-visbycf-bold-webfont.woff2") format("woff2"),
-    url("fontspring-demo-visbycf-bold-webfont.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "visby_cf";
-  src: url("fontspring-demo-visbycf-medium-webfont.woff2") format("woff2"),
-    url("fontspring-demo-visbycf-medium-webfont.woff") format("woff");
+  font-family: "zuume";
+  src: url("fonts/zuume/zuume-medium-webfont.woff2") format("woff2"),
+    url("fonts/zuume/zuume-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "zuume";
+  src: url("fonts/zuume/zuume-bold-webfont.woff2") format("woff2"),
+    url("fonts/zuume/zuume-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* General css */
 body {
   background: #000000;
   color: white;
@@ -53,6 +48,21 @@ body {
   flex-direction: column;
 }
 
+.subtitle-text {
+  font-weight: 500;
+  font-size: 12px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+
+/* Top strip */
 .top-strip {
   display: flex;
   flex-direction: row;
@@ -67,6 +77,7 @@ body {
   margin: 9px 11px 8px;
 }
 
+/* Header section */
 .header {
   display: flex;
   flex-direction: row;
@@ -80,94 +91,9 @@ body {
   left: -16px;
 }
 
+/* Project details section */
 .project_details .subtitle-text {
   margin-bottom: 8px;
-}
-
-.section {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  margin-left: 90px;
-  margin-right: 153px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.section__no-border {
-  border: 0px;
-}
-
-.section__heading {
-  margin-left: 70px;
-  margin-right: 195px;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 12px;
-  margin-top: 15px;
-}
-
-.section__hr {
-  border: 1px solid #ffffff;
-  opacity: 0.2;
-}
-
-.hr__1px_solid_white_opacity_2 {
-  border: 1px solid #ffffff;
-  opacity: 0.2;
-}
-
-.section__content {
-  margin-left: 68px;
-  margin-right: 66px;
-}
-
-.section__content__with_image {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.section__image {
-  min-width: 394px;
-  width: 394px;
-  height: 312px;
-  opacity: 0.5;
-  border: 1px solid #ffffff;
-  margin-right: 45px;
-  margin-top: 71px;
-  margin-bottom: 71px;
-}
-
-.section__content__hr {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  margin-bottom: 11px;
-}
-
-.paragraph {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 32px;
-  margin-right: 230px;
-  width: 100%;
-}
-
-.paragraph__main {
-  margin-right: 150px;
-}
-
-.paragraph__title {
-  margin-top: 20px;
-  margin-bottom: 12px;
-  font-weight: 700px;
-  font-size: 20px;
-  line-height: 140%;
-}
-
-.paragraph__content {
-  opacity: 0.7;
-
-  font-size: 18px;
-  line-height: 144%;
 }
 
 .image-view {
@@ -193,9 +119,9 @@ body {
 }
 
 .investment_name {
-  font-family: "league_gothic";
+  font-family: "zuume";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 46px;
   letter-spacing: 6.78641px;
   margin-top: 5px;
@@ -273,7 +199,7 @@ body {
   background: none;
   border: 0;
   width: 60px;
-  font-family: "league_gothic";
+  font-family: "zuume";
   color: #ffffff;
   font-weight: 500;
   font-size: 40px;
@@ -291,7 +217,7 @@ body {
 
 .investment_amount,
 .processing_fee {
-  font-family: "league_gothic";
+  font-family: "zuume";
   font-weight: 500;
   font-size: 40px;
   line-height: 52px;
@@ -315,19 +241,91 @@ body {
   width: 174px;
 }
 
-/* Common css */
-.subtitle-text {
-  font-weight: 500;
-  font-size: 12px;
-  color: #ffffff;
-  opacity: 0.5;
+.section {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-left: 90px;
+  margin-right: 153px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.flex {
-  display: flex;
+.section__no-border {
+  border: 0px;
 }
-.flex-row {
+
+.section__heading {
+  margin-left: 70px;
+  margin-right: 195px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  margin-top: 15px;
+}
+
+.section__hr {
+  border: 1px solid #ffffff;
+  opacity: 0.2;
+}
+
+.hr__1px_solid_white_opacity_2 {
+  border: 1px solid #ffffff;
+  opacity: 0.2;
+}
+
+.section__content {
+  margin-left: 68px;
+  margin-right: 66px;
+}
+
+.section__content__with_image {
+  display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.section__image {
+  min-width: 394px;
+  width: 394px;
+  height: 312px;
+  opacity: 0.5;
+  border: 1px solid #ffffff;
+  margin-right: 45px;
+  margin-top: 71px;
+  margin-bottom: 71px;
+}
+
+.section__content__hr {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 11px;
+}
+
+/* Paragraph used in section */
+.paragraph {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  margin-right: 230px;
+  width: 100%;
+}
+
+.paragraph__main {
+  margin-right: 150px;
+}
+
+.paragraph__title {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-weight: 700px;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.paragraph__content {
+  opacity: 0.7;
+
+  font-size: 18px;
+  line-height: 144%;
 }
 
 /* Stay connected section */
@@ -389,6 +387,7 @@ body {
   margin-top: 30px;
 }
 
+/* More from this project section */
 .section__more_from_project {
   margin-left: 87px;
   margin-top: 80px;
@@ -511,6 +510,7 @@ body {
   color: #ffffff;
 }
 
+/* Footer */
 .footer {
   margin-top: 105px;
   margin-bottom: 45px;
