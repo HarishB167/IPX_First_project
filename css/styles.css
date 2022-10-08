@@ -1,20 +1,16 @@
 /* Fonts */
 @font-face {
   font-family: "visby_cf";
-  src: url("fonts/visby-cf/fontspring-demo-visbycf-bold-webfont.woff2")
-      format("woff2"),
-    url("fonts/visby-cf/fontspring-demo-visbycf-bold-webfont.woff")
-      format("woff");
+  src: url("fonts/visby-cf/visby_bold-webfont.woff2") format("woff2"),
+    url("fonts/visby-cf/visby_bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "visby_cf";
-  src: url("fonts/visby-cf/fontspring-demo-visbycf-medium-webfont.woff2")
-      format("woff2"),
-    url("fonts/visby-cf/fontspring-demo-visbycf-medium-webfont.woff")
-      format("woff");
+  src: url("fonts/visby-cf/visby_medium-webfont.woff2") format("woff2"),
+    url("fonts/visby-cf/visby_medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -41,6 +37,10 @@ body {
   color: white;
   font-family: "visby_cf", sans-serif;
   margin: 0;
+}
+
+button {
+  font-family: "visby_cf", sans-serif;
 }
 
 .container {
@@ -98,6 +98,13 @@ body {
 
 .image-view {
   border-radius: 13.5614px;
+  width: 534px;
+  height: 704px;
+}
+
+.image-view img {
+  border-radius: 13.5614px;
+  object-fit: cover;
   width: 534px;
   height: 704px;
 }
